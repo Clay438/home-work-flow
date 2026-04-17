@@ -4,9 +4,14 @@ mkdir -p homework
 mkdir -p homework/{file,img,data,ref}
 cd homework
 
-touch 2310412609.docx file/a.md
+touch student_id.docx file/a.md
 
-mv -n ~/downloads/*.{jpg,jpeg,png} img/ 2>/dev/null
-mv -n ~/downloads/*.xlsx data/ 2>/dev/null
+cp ~/downloads/*.jpg img/
+cp ~/downloads/*.jpeg img/
+cp ~/downloads/*.png img/
+cp ~/downloads/*.xlsx data/
+cp ~/downloads/*.csv data/
+cp ~/downloads/*.html data/
 
-open file/a.md 2310412609.docx
+
+open file/a.md student_id.docx
