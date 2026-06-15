@@ -15,12 +15,8 @@ cd homework
 
 touch student_id.docx file/a.md
 
-cp ~/downloads/*.jpg img/
-cp ~/downloads/*.jpeg img/
-cp ~/downloads/*.png img/
-cp ~/downloads/*.xlsx data/
-cp ~/downloads/*.csv data/
-cp ~/downloads/*.html data/
+mv -n ~/downloads/*.{jpg,jpeg,png} img/ 2>/dev/null
+mv -n ~/downloads/*.xlsx data/ 2>/dev/null
 
 
 open file/a.md student_id.docx
